@@ -1,0 +1,496 @@
+/*
+=====================
+CSS Table of Conttent 
+=====================
+*/
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #4E4E4E;
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 2s;
+    /* Internet Explorer */
+    -o-animation: fadein 2s;
+    /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: .8rem;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000000;
+    line-height: 1.4;
+}
+
+b {
+    font-weight: 700;
+    color: #000000;
+}
+
+/*
+------------------------  
+Keyframes  Css 
+--------------------------
+*/
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*
+------------------------  
+ 04.  Menu Css
+--------------------------
+*/
+
+
+.step-box .text-2xl {
+    color: #4E4E4E;
+    font-size: 1rem!important;
+}
+.banner-area {
+    background-size: cover;
+    background-position: bottom;
+}
+.meanmenu-container {
+    position: relative;
+}
+
+.mean-container .mean-bar {
+    float: none;
+    background: transparent;
+}
+
+.mean-container .mean-nav {
+    float: none;
+    position: absolute;
+    top: 100%;
+}
+
+.mean-container .mean-nav ul li {
+    border: 0;
+}
+
+.mean-container .mean-nav ul li li a {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 6px 40px;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+    padding: 1px !important;
+}
+
+.mean-container .meanmenu-reveal {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    right: 0;
+    position: absolute;
+}
+
+.mean-container .meanmenu-reveal span {
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    border-radius: 10px;
+}
+
+.mean-container .meanmenu-reveal span:nth-child(2) {
+    top: 19px;
+}
+
+.mean-container .meanmenu-reveal span:nth-child(3) {
+    top: 28px;
+}
+
+.mean-container .meanmenu-reveal.meanclose span:nth-child(1) {
+    top: 20px;
+    transform: rotate(-45deg);
+}
+
+.mean-container .meanmenu-reveal.meanclose span:nth-child(2) {
+    top: 20px;
+    opacity: 0;
+}
+
+.mean-container .meanmenu-reveal.meanclose span:nth-child(3) {
+    top: 20px;
+    transform: rotate(45deg);
+}
+
+@media only screen and (min-width: 1024px) {
+    .dropdown-menu .dropdown .submenu a {
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .dropdown-menu .dropdown .submenu {
+        opacity: 0;
+        visibility: hidden;
+        top: calc(100% + 20px);
+        transition: .5s;
+        min-width: 10em;
+        max-width: 1000px;
+        height: auto;
+        margin: 0;
+        z-index: 9999;
+        position: absolute;
+        background: #FFFFFF;
+    }
+
+    .dropdown-menu .dropdown .megamenu {
+        display: none;
+    }
+
+    .dropdown-menu .dropdown:hover>.submenu {
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+    }
+}
+
+.header-nav ul li a {
+    font-family: 'Archivo', sans-serif;
+}
+
+.header-sticky {
+    position: fixed;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    z-index: 9999;
+    background-color: #FFFFFF;
+}
+
+.btn {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+}
+
+.btn .hover-underline::after {
+    background-color: #FFFFFF;
+}
+
+.btn2 {
+    border: 2px solid #000000;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+}
+
+.btn2 .hover-underline::after {
+    background-color: #000000;
+}
+
+/*
+------------------------  
+09. Preloader
+--------------------------
+*/
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999999;
+}
+
+.load-container {
+    position: absolute;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    letter-spacing: normal;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.linespinner {
+    width: 10px;
+    height: 30px;
+    background: #FA6400;
+    position: relative;
+    animation: linespinner 1s ease-in-out infinite;
+    animation-delay: 0.4s;
+    border-radius: 8px;
+}
+
+.linespinner:after,
+.linespinner:before {
+    border-radius: 8px;
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background: #FA6400;
+    animation: linespinner 1s ease-in-out infinite;
+}
+
+.linespinner:before {
+    right: 18px;
+    animation-delay: 0.15s;
+}
+
+.linespinner:after {
+    left: 18px;
+    animation-delay: 0.6s;
+}
+
+@keyframes linespinner {
+
+    0%,
+    100% {
+        background-color: #FA6400;
+        box-shadow: 0 0 0 #FA6400, 0 0 0 #FA6400;
+    }
+
+    50% {
+        background-color: #FA6400;
+        box-shadow: 0 -15px 0 #FA6400, 0 15px 0 #FA6400;
+    }
+}
+
+/* 
+------------------------  
+09. all custom css
+--------------------------
+*/
+.sidebar-area {
+    width: 540px;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    bottom: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: right 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 999999;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: none;
+}
+
+body.active:before {
+    display: block;
+}
+
+body.active .sidebar-area {
+    right: 0;
+}
+
+.search-area,
+.megamenu-area {
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    display: none;
+}
+
+.search-area.active,
+.megamenu-area.active {
+    display: block;
+}
+
+.hover-underline {
+    position: relative;
+}
+
+.hover-underline::after {
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: #FA6400;
+    display: block;
+    transition: width .5s ease;
+    position: absolute;
+    left: 0;
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+}
+
+.label-underline {
+    position: relative;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.label-underline::after {
+    content: "";
+    height: 1px;
+    width: 40px;
+    background-color: #fa6400;
+    display: block;
+    transition: width .5s ease;
+    position: absolute;
+    right: -55px;
+    bottom: 14px;
+}
+
+.project-box .project-thumb>img {
+    height: 400px;
+    transition: transform .5s ease;
+}
+
+.project-box:hover .project-thumb>img {
+    transform: scale(1.2);
+}
+
+.plus .plus-extand {
+    width: 0;
+    overflow: hidden;
+    transition: width .5s ease;
+}
+
+.plus:hover .plus-extand {
+    width: 100px;
+}
+
+.service-item img {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.service-item:hover img {
+    visibility: visible;
+    opacity: 1;
+}
+
+.leadership-item .leadership-thumb>img {
+    max-height: 500px;
+    transition: transform .5s ease;
+}
+
+.leadership-item:hover .leadership-thumb>img {
+    transform: scale(1.2);
+}
+
+.news-box .news-thumb>img {
+    transition: transform .5s ease;
+}
+
+.news-box:hover .news-thumb>img {
+    transform: scale(1.2);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    display: none;
+}
+
+.swiper-horizontal>.swiper-scrollbar {
+    background: #FFFFFF;
+    position: relative;
+    height: 2px;
+    width: 100%;
+    left: 0;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #000000;
+}
+
+.footer-nav {
+    font-family: 'Archivo', sans-serif;
+}
